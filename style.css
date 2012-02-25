@@ -1,0 +1,79 @@
+body {
+	margin:0 auto 0 auto;
+	background:#0b0b0b;
+}
+
+#container{
+	position:relative;
+	margin:0 auto;	
+}
+
+img{
+	width:640px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#content{
+	position:absolute;
+	color:blue;
+	top:250px;
+	left:60px;
+	font:bold 36px/50px Helvetica, Sans-Serif;
+	color:white;
+	letter-spacing:-2px;
+}
+
+.dropdown select{
+	width:270px;
+	background: transparent;
+   	padding: 3px;
+   	font-size: 27px;
+   	border: 1px solid #ccc;
+   	height: 50px;
+
+}
+
+.dropdown{
+	width: 240px;
+   	height: 51px;
+   	overflow: hidden;
+   	background: url("images/down_arrow.jpg") no-repeat right #ddd;
+	border-radius:6px;
+	margin-bottom:5px;
+}
+
+input{
+	height:45px;
+	border-radius:6px;
+	width:450px;
+	font:bold 27px Helvetica, Sans-Serif;
+	letter-spacing:-1px;
+	margin-bottom:7px;
+}
+
+input{
+    outline:none;
+    -webkit-transition: all 0.25s ease-in-out;
+    -webkit-border-radius:7px;
+    border:1px solid rgba(0,0,0, 0.2);
+}
+
+input:focus{
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, 1); 
+    border:1px solid rgba(0,0,255, 0.8); 
+}
+
+#confirm{
+	height:54px;
+	width:190px;
+	position:relative;
+	float:right;
+	bottom:55px;
+	right:25px;
+	background:#ddd;
+	-webkit-box-shadow: 2px 2px 2px 2px black;
+	border-radius:5px;
+	cursor:pointer;
+	color:black;
+}
