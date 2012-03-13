@@ -16,12 +16,14 @@ img{
 
 #content{
 	position:absolute;
+	width:480px;
 	color:blue;
 	top:250px;
 	left:60px;
 	font:bold 36px/50px Helvetica, Sans-Serif;
 	color:white;
 	letter-spacing:-2px;
+	
 }
 
 .dropdown select{
@@ -70,10 +72,21 @@ input:focus{
 	position:relative;
 	float:right;
 	bottom:55px;
-	right:25px;
 	background:#ddd;
 	-webkit-box-shadow: 2px 2px 2px 2px black;
 	border-radius:5px;
 	cursor:pointer;
 	color:black;
+}
+
+.smalltxt{
+	font-size:20px;
+	line-height:21px;
+	padding-bottom:2%;
+}
+
+.header{
+	font-size:36px;
+	padding-top:5%;
+	padding-bottom:2%;
 }

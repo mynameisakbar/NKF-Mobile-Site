@@ -11,8 +11,13 @@
 		<img src="images/image283.jpg"/>
 		
 		<div id="content">
-			<h3>Fill in the particulars below:</h3>
-			Salutation:<br/>
+			<div class="header">Fill in the particulars below:</div>
+			NRIC/FIN No./UEN*:<br/>
+			<div class="smalltxt"><i>Required for the auto-inclusion of donation in your tax assessment to IRAS</i></div>
+			<input type="text" name="nric"/>
+			<br/>
+			
+			Salutation*:<br/>
 			<!--dropdown menu custom-->
 			<div class="dropdown">
 				<select id="salutation">
@@ -24,23 +29,23 @@
 				</select>
 			</div>
 			
-			Name:<br/>
-			<input type="text" name="fullname"/>
+			Surname*:<br/>
+			<input type="text" name="surname"/>
 			<br/>
 			
-			NRIC/FIN:<br/>
-			<input type="text" name="fullname"/>
+			Given Name*:<br/>
+			<input type="text" name="given_name"/>
+			<br/>
+			
+			Email*:<br/>
+			<input type="text" name="email"/>
 			<br/>
 			
 			Mobile No.:<br/>
-			<input type="text" name="fullname"/>
+			<input type="text" name="mobile"/>
 			<br/>
 			
-			Email:<br/>
-			<input type="text" name="fullname"/>
-			<br/>
-			
-			Donation:<br/>
+			Amount*:<br/>
 			<div class="dropdown">
 				<select id="donation">
 					<option value="10">$10</option>
