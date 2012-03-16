@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<title>NKF Mobile Site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
 		<div id="content">
 			<div class="header">Fill in the particulars below:</div>
 			NRIC/FIN No./UEN*:<br/>
-			<div class="smalltxt"><i>Required for the auto-inclusion of donation in your tax assessment to IRAS</i></div>
+			<div class="smalltxt"><i>Required for the auto-inclusion of<br/> donation in your tax assessment to IRAS</i></div>
 			<input type="text" name="nric"/>
 			<br/>
 			
@@ -46,13 +46,16 @@
 			<br/>
 			
 			Amount*:<br/>
-			<div class="dropdown">
+			<!--div class="dropdown">
 				<select id="donation">
 					<option value="10">$10</option>
 					<option value="20">$20</option>
 					<option value="30">$30</option>
 				</select>
-			</div>
+			</div-->
+				<input type=radio name="amount" class="donation" value="10" checked>$10</option> 
+				<input type=radio name="amount" class="donation" value="20">$20</option> 
+				<input type=radio name="amount" class="donation" value="30">$30</option> 
 			
 			<input type="submit" value="Donate" id="confirm">
 			
