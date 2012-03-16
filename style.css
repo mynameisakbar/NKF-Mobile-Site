@@ -98,7 +98,6 @@ input:focus{
 input.donation{
 	width:10px;
 	background:orange;
-	color: white;
 }
 
 input.donation:select{

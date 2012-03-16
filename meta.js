@@ -7,8 +7,8 @@ var meta=document.createElement('meta');
 	if (uagent.search("ipad") > - 1)
 
 	{
-		console.log("1");
-		alert("1");
+		/*console.log("1");
+		alert("1");*/
 		meta.content = "width=320, initial-scale=2.4, maximum-scale=2.4";
 
 	}
