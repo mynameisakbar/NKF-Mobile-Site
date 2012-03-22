@@ -80,9 +80,10 @@ input:focus{
 }
 
 .smalltxt{
-	font-size:12px;
-	line-height:21px;
+	font-size:10px;
+	line-height:15px;
 	padding-bottom:2%;
+	letter-spacing:0px;
 }
 
 .header{
@@ -103,3 +104,5 @@ input.donation{
 input.donation:select{
 	background:orange;
 }
+
+label.error {color: red;}

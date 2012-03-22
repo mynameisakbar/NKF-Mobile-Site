@@ -3,25 +3,33 @@
 <html lang="en">
 <head>
 	<script type="text/javascript" src="meta.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+ 	<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
 	<title>NKF Mobile Site</title>
     <!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"-->
 	<link rel="stylesheet" type="text/css" href="style.css">
+	  <script>
+  		$(document).ready(function(){
+    		$("#donateform").validate();
+  		});
+  	</script>
 </head>
 <body>
 	<div id="container">
 		<img src="images/image283.jpg"/>
 		
 		<div id="content">
+			<form id="donateform" action="">
 			<div class="header">Fill in the particulars below:</div>
-			NRIC/FIN No./UEN:<br/>
-			<div class="smalltxt"><i>Required for the auto-inclusion of<br/> donation in your tax assessment to IRAS</i></div>
-			<input type="text" name="nric"/>
+			<label for ="nr">NRIC/FIN No./UEN:</label><br/>
+			<div class="smalltxt"><i>Optional, will be used for the auto-inclusion of<br/> donation in your tax assessment to IRAS</i></div>
+			<input type="text" name="nric" id="nr"/>
 			<br/>
 			
-			Salutation:<br/>
+			<label for="salutation">Salutation*:</label><br/>
 			<!--dropdown menu custom-->
 			<div class="dropdown">
-				<select id="salutation">
+				<select id="salutation" class="required">
 					<option value="Dr">Dr</option>
 					<option value="Mr">Mr</option>
 					<option value="Mrs">Mrs</option>
@@ -30,23 +38,23 @@
 				</select>
 			</div>
 			
-			Surname:<br/>
-			<input type="text" name="surname"/>
+			<label for="sn">Surname*:</label><br/>
+			<input type="text" name="surname" id="sn" class="required"/>
 			<br/>
 			
-			Given Name:<br/>
-			<input type="text" name="given_name"/>
+			<label for="gn">Given Name*:</label><br/>
+			<input type="text" name="given_name" id="gn" class="required"/>
 			<br/>
 			
-			Email *:<br/>
-			<input type="text" name="email"/>
+			<label for="em">Email *:</label><br/>
+			<input type="text" name="email" id="em" class="required email"/>
 			<br/>
 			
-			Mobile No.:<br/>
-			<input type="text" name="mobile"/>
+			<label for="mb">Mobile No.:</label><br/>
+			<input type="text" name="mobile" id="mb" class="digits"/>
 			<br/>
 			
-			Amount *:<br/>
+			<label for="d">Amount *:</label><br/>
 			<!--div class="dropdown">
 				<select id="donation">
 					<option value="10">$10</option>
@@ -54,13 +62,13 @@
 					<option value="30">$30</option>
 				</select>
 			</div-->
-				<input type=radio name="amount" class="donation" value="10">$10</option> 
-				<input type=radio name="amount" class="donation" value="20">$20</option> 
-				<input type=radio name="amount" class="donation" value="30" checked>$30</option> 
+				<input type=radio name="amount" class="donation" value="10" id="d">$10</option> 
+				<input type=radio name="amount" class="donation" value="20" id="d">$20</option> 
+				<input type=radio name="amount" class="donation" value="30" id="d" checked>$30</option> 
 			<br/>
 			<i>* Required</i>
 			<input type="submit" value="Donate" id="confirm">
-			
+			</form>
 			
 		</div>
 	</div>
