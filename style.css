@@ -92,12 +92,12 @@ input:focus{
 	padding-bottom:2%;
 }
 
-.donation{
-	width:100px;
+.spread{
+	margin-right:34px;
 }
 
 input.donation{
-	width:10px;
+	width:15px;
 	background:orange;
 }
 
